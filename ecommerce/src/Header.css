@@ -1,0 +1,27 @@
+.title{
+    /* align-items: center; */
+    color: white;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* text-align:center; */
+
+}
+.headerContainer{
+    background-color: black;
+    display:flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.viewCart{
+    color: azure;
+    position:fixed; 
+    right: 0px;
+    padding: 25px;
+
+}
+.head{
+    display:flexbox;
+
+}

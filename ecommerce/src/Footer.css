@@ -1,0 +1,11 @@
+.notice{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position:fixed;
+   bottom:0;
+   margin-bottom: 0px;
+   width:100%;
+ 
+  
+}

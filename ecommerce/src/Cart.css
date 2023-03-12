@@ -1,0 +1,22 @@
+.btn{
+    background-color: black;
+    margin: 3px;
+    color: bisque;
+    border: 2px solid black;
+    border-radius: 10px;
+    
+    padding: 2px 5px;
+    font-size: xx-large;
+}
+.btnmns{
+    background-color: black;
+    margin: 3px;
+    color: bisque;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: xx-large;
+
+}

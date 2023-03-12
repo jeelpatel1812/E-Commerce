@@ -1,0 +1,46 @@
+.wrapper{
+    border-radius: 10px;
+}
+.card_img{
+    border-radius: 10px;
+}
+.btn{
+    background-color: black;
+    margin: 3px;
+    color: bisque;
+    border: 2px solid black;
+    border-radius: 5px;
+    
+    padding: 2px 5px;
+    font-size: large;
+   
+}
+.pr{
+    text-align: center;
+    font-weight: 600;
+    font-size:x-large;
+    color: green;
+}
+.addCart{
+    background-color: black;
+   
+    color: bisque;
+    border: 2px solid black;
+    border-radius: 5px;
+    
+    padding: 2px 5px;
+    font-size:medium;
+    width:100px;
+}
+.btnmns{
+    background-color: black;
+    margin: 3px;
+    color: bisque;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: large;
+
+}

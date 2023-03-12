@@ -1,0 +1,56 @@
+.wrapper{
+    border-radius: 10px;
+}
+/* .card_img{
+    border-radius: 10px;
+} */
+.btn{
+    background-color: black;
+    margin: 3px;
+    color: bisque;
+    border: 2px solid black;
+    border-radius: 10px;
+    
+    padding: 2px 5px;
+    font-size: large;
+}
+.addCart{
+    background-color: black;
+   
+    color: bisque;
+    border: 2px solid black;
+    border-radius: 5px;
+    
+    padding: 2px 5px;
+    font-size:medium;
+    width:100px;
+}
+.btnmns{
+    background-color: black;
+    margin: 3px;
+    color: bisque;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 2px;
+    padding-left: 12px;
+    padding-right:12px;
+    font-size: xx-large;
+
+}
+
+.lineList{
+    height: 200px;
+    border: 2px solid black;
+    
+    margin: 5px;
+    border-radius: 5px;
+}
+.inLine{
+    display:flex;
+    
+    
+}
+.addCart{
+    height:30px;
+    
+}
