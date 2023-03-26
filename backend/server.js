@@ -28,11 +28,11 @@ app.get('/', (req, res) => {
 app.post('/create', (req, res) => {
 
     new Product({
-        productName:req.body.productName ||  "aaa",
+        productName:req.body.productName ||  "Test",
     productImage: req.body.productImage||  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHKo8dHl8dBZJslTnz8kE0q2STi1y7hHtpVw&usqp=CAU",
-    description: req.body.description || "descv" ,
-    unitPrice: req.body.unitPrice || "123123",
-    quantity: req.body.quantity || "123123",
+    description: req.body.description || "Testing Description" ,
+    unitPrice: req.body.unitPrice || "10",
+    quantity: req.body.quantity || "1",
     }).save()
 
     res.send(true)
@@ -93,7 +93,6 @@ app.delete('/deleteProduct',async(req,res)=>{
         }
         else{
             console.log('product has been deleted', data);
-            // res.status(204).json(data)
         }
     })
     res.send(true);
