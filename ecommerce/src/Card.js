@@ -5,6 +5,7 @@ import './Card.css';
 export default function Card(props) {
     let newClassName = `color_bg ${props.alt}`
     let bg_img = `url(${props.images})`
+    
     // let { name,price,description,image,quantity } = props
     let { title, unitPrice, dollar = '$', description, isFromCart=false, cartQuantity, productId } = props
    
@@ -38,6 +39,18 @@ export default function Card(props) {
           })
     }
 
+    const Remove = () => {
+        axios({
+            method: 'delete',
+            url: 'http://localhost:3001/deleteProduct',
+            data: {
+              productId: props.id,
+            }
+          }).then(res => {
+            console.log("sucessfully deleted")
+          })
+    }
+
     return (
 
         <div className="card" >
@@ -68,6 +81,7 @@ export default function Card(props) {
                             )}
                         </div>
                         <button className="addCart" onClick={addToBasket}>Add to Cart</button>
+                        <button className="addCart" onClick={Remove} style={{backgroundColor:"red",marginLeft:"5px"}}>Remove</button>
 
                     {/* </div> */}
                 </div>

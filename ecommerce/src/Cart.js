@@ -16,7 +16,7 @@ export default function Cart() {
   return (
     <>
     <h1>Cart Products</h1>
-    <div>{cart.map((c) => (
+    {/* <div>{cart.map((c) => (
         <SelectList
         title={c.product.productName}
         images={c.product.productImage}
@@ -25,7 +25,7 @@ export default function Cart() {
         cartQuantity={c.quantity || 0}
         productId={c.product._id}
         />))
-        }</div>
+        }</div> */}
       </>
   )
 }

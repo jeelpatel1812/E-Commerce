@@ -13,7 +13,7 @@ function HomePage() {
         axios.get('http://localhost:3001/').then(res => {
             setProducts(res.data);
         })
-    }, []);
+    }, [products]);
 
     return (
         <div className="container">

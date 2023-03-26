@@ -5,6 +5,7 @@ import HomePage from './HomePage';
 import ProductPage from './ProductPage.js';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Cart from './Cart';
+import Form from './Form';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route exact path="/" element={<HomePage />} />
             <Route path="/product/:id" element={<ProductPage />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/createForm" element={<Form />} />
             </Routes>
         </BrowserRouter>
 

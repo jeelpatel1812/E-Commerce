@@ -26,12 +26,13 @@ app.get('/', (req, res) => {
 });
 
 app.post('/create', (req, res) => {
+
     new Product({
-        productName: "aaa",
-    productImage: "//",
-    description: "descv" ,
-    unitPrice: "123123",
-    quantity: "123123.123",
+        productName:req.body.productName ||  "aaa",
+    productImage: req.body.productImage||  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHKo8dHl8dBZJslTnz8kE0q2STi1y7hHtpVw&usqp=CAU",
+    description: req.body.description || "descv" ,
+    unitPrice: req.body.unitPrice || "123123",
+    quantity: req.body.quantity || "123123",
     }).save()
 
     res.send(true)
@@ -81,6 +82,25 @@ app.post('/addorUpdateCart', async (req,res) => {
         res.send(true);
     }
 })
+
+app.delete('/deleteProduct',async(req,res)=>{
+
+    const productId=req.body.productId;
+    Product.findByIdAndDelete(productId , (error, data)=>{
+        if(error) {
+            console.log('error in deleting')
+            throw error;
+        }
+        else{
+            console.log('product has been deleted', data);
+            // res.status(204).json(data)
+        }
+    })
+    res.send(true);
+
+})
+
+
 
 app.listen(PORT, () => {
     console.log(`Running on 3001`);

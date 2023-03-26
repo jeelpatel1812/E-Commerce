@@ -3,15 +3,17 @@
     color: white;
     font-size: larger;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* text-align:center; */
+    text-decoration: none;
+    
 
 }
 .headerContainer{
     background-color: black;
-    display:flex;
+    /* display:flex; */
     position: sticky;
     top: 0;
     z-index: 1;
+    font-size: x-large;
 }
 
 .viewCart{
@@ -24,4 +26,8 @@
 .head{
     display:flexbox;
 
+}
+
+.myicon{
+    padding-top:"30px"
 }
